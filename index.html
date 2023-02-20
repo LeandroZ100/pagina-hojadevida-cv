@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js"></script>
+    <title>Curriculum/PaginaWeb</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- encabezado y menú -->
+        <header>
+            <h1 class="gradient-text">ZARCOCV</h1>
+            <nav id="nav">
+                <a href="#inicio" onclick="seleccionar()">Inicio</a>
+                <a href="#sobremi" onclick="seleccionar()" >Sobre Mí</a>
+                <a href="#curriculum" onclick="seleccionar()">Experiencia</a>
+                <a href="#conocimientos" onclick="seleccionar()">Conocimientos</a>
+                <a href="#contacto" onclick="seleccionar()">Contacto</a>
+            </nav>
+
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- sección Inicio -->
+        <section id="inicio">
+            <div class="fila">
+                <div class="col">
+                    <p>Soy Zarco Leandro</p>
+                    <h1 class="g">Diseñador Web</h1>
+                   
+                       <section id="conteiner_btn">
+                        <a dowload="Cv-resumido" href="../pagina del cv/img/pdf-cv-resumido.pdf" class="btn-neon">
+                            <span id="span1"></span>
+                            <span id="span2"></span>
+                            <span id="span3"></span>
+                            <span id="span4"></span>
+                                        Descarga PDF
+                        </a>
+                        </section>
+                </div>
+                <div class="col">
+                    <div class="contenedor-img">
+                        <img src="img/foto.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sección Sobre Mí -->
+        <section id="sobremi">
+            <div class="fila">
+                <div class="col">
+                    <h3>Sobre Mí</h2>
+                    <h2>Soy Desarrollador Web</h2>
+                    <h3 class="frontend">Front-End</h3>
+                    <p>Soy un autodidacta con pasión por la innovación y la tecnología. Mi atención al detalle, habilidades organizacionales, espíritu de equipo y habilidad de liderar múltiples proyectos en paralelo me han permitido prosperar en entornos de trabajo complejos y dinámicos.</p>
+                </div>
+                <div class="col">
+                    
+                     <div class="container-leer">
+                        <p>Estoy preparado para poder utilizar mi conocimiento base sobre el Desarrollo Web para proporcionar la mejor experiencia de usuario, mejorando consecuentemente los ratios de conversión y satisfacción. Mi habilidad de permanecer positivo y calmado me han permitido superar desafiantes situaciones, individualmente y en equipo...</p>
+      
+                        <span class="esconder" id="esconderTexto">
+                            <p> Mi próxima meta es continuar teniendo un impacto en la sociedad y en el uso de nuestros recursos finitos, desarrollándome en un entorno desafiante y acelerado. Mis mayores activos son mis habilidades para pensar estratégicamente, gestionar planes de acción complejos y comunicarme eficientemente con una gran variedad de actores.</p>
+                        </span>
+
+                        <button class="leerMas_btn" id="esconderTexto_btn">Leer Mas</button>
+                        <script src="boton.js"></script>
+  </div>
+                         </div>
+                         
+            </div>
+        </section>
+
+        <!-- sección Curriculum -->
+        <section id="curriculum">
+            <h3>Experiencia</h3>
+            <div class="fila">
+                <div class="col">
+                    <p class="experiencia">Curriculum</p>
+                    <h2>Mas de 2 años de experiencia como <span class="txtEspecial"></span></h2>
+                </div>
+                <div class="col">
+                    <div class="info">
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Primeros Pasos del Desarollo Frontend.</h4>
+                            <p>Desarrollo de perfiles digitales (2022 - Actualidad)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Certificado Avalado por la Cámara Empresarial de Software.</h4>
+                            <p>Servicios Informáticos (CESSI - 2022)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Fundamentos Básicos de la Programación.</h4>
+                            <p>#Se Programar (2021 - 2022)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>E.E.S.T. N°4 Escuela De Educación Secundaria Técnica.</h4>
+                            <p>Tecnico Mecanico (2010 - 2014)</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>     
+        
+        <!-- sección conocimientos -->
+       <section id="conocimientos">
+
+            <h3 class="titulo">Conocimientos</h3>
+            
+            <section id="habilidades">
+                
+                <h4 class="sub_title">HTML</h4>
+
+                <div class="porcentaje">
+                    <div style="width: 90%;"></div>
+              </div>
+            
+            </section>
+                
+            <section id="habilidades">
+                
+                <h4 class="sub_title">CSS</h4>
+
+                <div class="porcentaje">
+                    <div style="width: 75%;"></div>
+              </div>
+            
+            </section>
+
+            <section id="habilidades">
+                
+                <h4 class="sub_title">JAVASCRIPT</h4>
+
+                <div class="porcentaje">
+                    <div style="width: 45%;"></div>
+              </div>
+            
+            </section>
+        </section>
+
+        <!-- sección contacto -->
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <div class="redes">
+                <a href="https://es-la.facebook.com/"><i class="fa-brands fa-square-facebook gradient-text"></i></i></a>
+                <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-twitter gradient-text"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram gradient-text"></i></a>
+                <a href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin gradient-text"></i></a>
+
+            </div>
+            <form action="">
+                <div class="entrada">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div class="entrada">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="entrada">
+                    <label for="">Mensaje</label>
+                    <textarea name="menasaje" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <a href="https://www.google.com/"><button>Enviar</button></a>
+                
+
+            </form>
+           
+        </section>
+    </div>
+
+    
+</body>
+</html>
